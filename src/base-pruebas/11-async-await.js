@@ -7,7 +7,7 @@ export const getImagen = async() => {
 
     try {
 
-        const apiKey = 'sIGuBiSdsiIuYOSxYoVKeFUTT0xq9MLG';
+        const apiKey = 'xxxsIGuBiSdsiIuYOSxYoVKeFUTT0xq9MLG';
         const resp   = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`);
         const { data } = await resp.json(); 
 
@@ -17,8 +17,7 @@ export const getImagen = async() => {
 
     } catch (error) {
         // manejo del error
-        console.error(error)
-        return 'No se encontro la imagen';
+        return 'No se pudo obtener una url valida';
     }
     
     
